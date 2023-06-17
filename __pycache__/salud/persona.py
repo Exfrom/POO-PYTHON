@@ -2,8 +2,10 @@
 class Persona:
 
 #Metodos
-    def __init__(self):
-        """self.tipoDoc = tipoDoc
+
+    def __init__():
+        """
+        self.tipoDoc = tipoDoc
         self.documento= documento
         self.nombre = nombre
         self.apellidos =apellidos
