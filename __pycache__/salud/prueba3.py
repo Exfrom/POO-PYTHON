@@ -20,7 +20,7 @@ imc_persona2 = persona2.calcularImc()
 es_mayor_edad_persona2 = persona2.mayorEdad()
 
 # Crear una instancia de la clase Inicio
-inicio = Inicio()
+Inicio = Inicio()
 
 # Acceder a los métodos de la instancia inicio
-inicio.ejecutar()
+Inicio.ejecutar()
