@@ -1,34 +1,42 @@
  
 class Persona:
-
-#Metodos
-
-    def __init__():
-        """
+    def __init__(self, tipoDoc, documento, nombre, apellido, peso, estatura, edad, sexo):
         self.tipoDoc = tipoDoc
-        self.documento= documento
+        self.documento = documento
         self.nombre = nombre
-        self.apellidos =apellidos
-        self.peso =peso
+        self.apellido = apellido
+        self.peso = peso
         self.estatura = estatura
         self.edad = edad
-        self.genero = genero"""
+        self.sexo = sexo
 
     def pedirDatos(self):
         self.tipoDoc = input("Tipo de documento: ")
         self.documento = input("Número de documento: ")
         self.nombre = input("Nombre: ")
-        self.apellidos = input("Apellidos")
-        self.peso = int(input("Peso en kg: "))
-        self.estatura = int(input("Estura en metros: "))
-        self.edad = int(input("edad: "))
-        self.genero = int("genero: ")
-    
-    """def mostrarPersona(self):
+        self.apellido = input("Apellido: ")
+        self.peso = float(input("Peso en kg: "))
+        self.estatura = float(input("Estatura en metros: "))
+        self.edad = int(input("Edad: "))
+        self.sexo = input("Sexo: ")
+
+    def mostrarPersona(self):
+        print("Datos de la persona:")
         print("Tipo de documento:", self.tipoDoc)
-        print("Nombre de documento:", self.nombre)
-        print("Apellidos de documento:", self.apellidos)
-        print("Peso en kg:", self.peso)
-        print("Estatura en metros:", self.estatura)
-        print("Edad de documento: ", self.edad)
-        print("Genero: ",self.genero)"""
+        print("Número de documento:", self.documento)
+        print("Nombre:", self.nombre)
+        print("Apellido:", self.apellido)
+        print("Peso:", self.peso, "kg")
+        print("Estatura:", self.estatura, "m")
+        print("Edad:", self.edad)
+        print("Sexo:", self.sexo)
+
+    def calcularImc(self):
+        peso_actual = self.peso / (self.estatura ** 2)
+        return peso_actual
+
+    def mayorEdad(self):
+        if self.edad >= 18:
+            return True
+        else:
+            return False
