@@ -1,14 +1,14 @@
  
 class Persona:
-    def __init__(self, tipoDoc, documento, nombre, apellido, peso, estatura, edad, sexo):
-        self.tipoDoc = tipoDoc
-        self.documento = documento
-        self.nombre = nombre
-        self.apellido = apellido
-        self.peso = peso
-        self.estatura = estatura
-        self.edad = edad
-        self.sexo = sexo
+    def __init__(self):
+        self.tipoDoc = ""
+        self.documento = ""
+        self.nombre = ""
+        self.apellido = ""
+        self.peso = 0.0
+        self.estatura = 0.0
+        self.edad = 0
+        self.sexo = ""
 
     def pedirDatos(self):
         self.tipoDoc = input("Tipo de documento: ")
