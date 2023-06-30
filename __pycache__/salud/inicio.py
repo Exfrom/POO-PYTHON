@@ -1,5 +1,5 @@
 from persona import Persona
-from Empleado
+from empleado import Empleado
 #Instancio 
 Persona1 = Persona()
 
