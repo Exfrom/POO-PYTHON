@@ -15,5 +15,6 @@ Persona2.mostrarPersona()
 Persona2.calcularImc()
 Persona2.mayorEdad()
 
-empleado1 = Empleado()
+empleado1 = pedirDatos()
+empleado1
 
