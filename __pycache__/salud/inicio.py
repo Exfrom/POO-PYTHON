@@ -1,5 +1,6 @@
-from persona import Persona
-from empleado import Empleado
+from Persona import Persona
+from Empleado import Empleado
+#Salud
 #Instancio 
 Persona1 = Persona()
 
@@ -15,6 +16,13 @@ Persona2.mostrarPersona()
 Persona2.calcularImc()
 Persona2.mayorEdad()
 
-empleado1 = pedirDatos()
-empleado1
+#Empleado:
+
+empleado1 = Empleado()
+
+empleado1.pedirDatos()
+empleado1.calcularHonorarios()
+empleado1.imprimirEmpleado
+
+
 
