@@ -15,28 +15,26 @@ class Persona:
         self.documento = input("Número de documento: ")
         self.nombre = input("Nombre: ")
         self.apellido = input("Apellido: ")
-        self.peso = float(input("Peso en kg: "))
-        self.estatura = float(input("Estatura en metros: "))
+        self.peso = int(input("Peso en kg: "))
+        self.estatura = int(input("Estatura en metros: "))
         self.edad = int(input("Edad: "))
         self.sexo = input("Sexo: ")
 
     def mostrarPersona(self):
-        print("Datos de la persona:")
-        print("Tipo de documento:", self.tipoDoc)
-        print("Número de documento:", self.documento)
-        print("Nombre:", self.nombre)
-        print("Apellido:", self.apellido)
-        print("Peso:", self.peso, "kg")
-        print("Estatura:", self.estatura, "m")
-        print("Edad:", self.edad)
-        print("Sexo:", self.sexo)
+        print(f"EL usuario {self.nombre} {self.apellido} con tipo de documento {self.tipoDoc} numero de documento: {self.documento} tiene una edad de: {self.edad} años,Tiene un peso de {self.peso} kg y mide {self.estatura} metros.")
 
     def calcularImc(self):
-        peso_actual = self.peso / (self.estatura ** 2)
-        return peso_actual
+        peso = self.peso / (self.estatura ** 2)
+        if peso < 20 :
+            print("el peso esta por debajo")
+        elif peso > 20 and peso < 26 :
+            print("el peso es ideal")
+        elif peso> 25 :
+            print("estas en sobrepeso")
+        return peso
 
     def mayorEdad(self):
         if self.edad >= 18:
-            return True
+            print("Eres mayor de edad")
         else:
-            return False
+            print("Eres menor de edad")
