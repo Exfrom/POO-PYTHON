@@ -7,8 +7,7 @@ class Empleado(Persona):
     departamento=""
     honorarios = 0
   
-    def __init__(self,tipoDoc,documento,nombre,apellido,peso,estatura,edad,sexo,
-                 cargo,valorHora,horasTrabajadas,departamento ):
+    def __init__(self,tipoDoc,documento,nombre,apellido,peso,estatura,edad,sexo,cargo,valorHora,horasTrabajadas,departamento ):
         super().__init__(tipoDoc,documento,nombre,apellido,peso,estatura,edad,sexo)
         self.cargo= cargo
         self.valorHora= valorHora
